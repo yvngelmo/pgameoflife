@@ -129,6 +129,8 @@ void draw()
 //maus erase wenn true, draw wenn false
 void mousePressed()
 {
+  if(play) play=false;
+  
   if(cell[mouseX/10][mouseY/10] == drawState)
   {
     drawState=!drawState;
